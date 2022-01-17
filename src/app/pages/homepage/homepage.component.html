@@ -1,6 +1,6 @@
-<div class="flex justify-between flex-wrap w-3/4 margin-zero-auto py-12">
-    <div *ngFor="let data of productStructure" class="w-1/2 py-8">
-        <div class="w-3/4 margin-zero-auto">
+<div class="flex justify-between flex-wrap w-3/4 margin-zero-auto py-12 lg:py-4">
+    <div *ngFor="let data of productStructure" class="w-1/2 py-8 lg:w-full">
+        <div class="w-3/4 margin-zero-auto lg:w-full">
             <img
             src={{data.imageName}}
             class="object-contain rounded-3xl"
@@ -11,7 +11,7 @@
             {{data.productName}}
           </p>
     
-          <button class="bg-transparent hover:greenFluffyBag text-greenFluffyBag font-semibold hover:text-white py-2 px-4 border border-greenFluffyBag hover:border-transparent rounded">
+          <button (click)="onContactButtonClick(data.productName)" class="bg-transparent hover:greenFluffyBag text-greenFluffyBag font-semibold hover:text-white py-2 px-4 border border-greenFluffyBag hover:border-transparent rounded">
             Contattaci per la {{data.productName}}
           </button>
         </div>

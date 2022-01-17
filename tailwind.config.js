@@ -7,6 +7,9 @@ module.exports = {
   },
   darkMode: 'class', 
   theme: {
+    screens: {
+      'lg': {'max': '1050px'},
+    },
     colors: {
       'greenFluffyBag': '#0A642E',
     },

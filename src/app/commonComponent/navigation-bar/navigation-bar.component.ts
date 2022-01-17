@@ -12,4 +12,7 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onContactButtonClick(): void {
+    window.location.href = `mailto:${'fluffybag.italy@gmail.com?subject=Fluffy Bag Contattaci!'}`;
+  }
 }
