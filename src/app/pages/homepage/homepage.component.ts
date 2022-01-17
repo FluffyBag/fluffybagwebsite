@@ -133,7 +133,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onContactButtonClick(): void {
-    window.location.href = `mailto:${'info@iconarredamenti.it?subject=Icona arredamenti contattaci!'}`;
+  onContactButtonClick(productName: string): void {
+    window.location.href = `mailto:${`fluffybag.italy@gmail.com?subject=Prodotto: ${productName}`}`;
   }
 }

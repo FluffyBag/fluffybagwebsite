@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { NavigationBarComponent } from './commonComponent/navigation-bar/navigation-bar.component';
+import { FooterComponent } from './commonComponent/footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
@@ -17,7 +18,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomepageComponent,
     AboutUsComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
