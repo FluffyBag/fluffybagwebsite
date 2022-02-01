@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataManager } from 'src/app/DataManager/DataManager';
+import 'tw-elements';
+import { FluffyBagDetailId } from 'src/app/DataManager/DataManager';
 
 @Component({
   selector: 'app-homepage',
@@ -9,131 +13,91 @@ export class HomepageComponent implements OnInit {
 
   productStructure = [
     {
+      pathName: FluffyBagDetailId.fluffy_one,
       id: 1,
-      imageName: './assets/homepage/photo_1.jpg',
+      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-1-uno.png',
       imageAlt: '',
-      productName: 'Foto 1',
+      productName: 'Fluffy Bag Numero Uno',
       productDescription: ''
     },
     {
+      pathName: FluffyBagDetailId.fluffy_two,
       id: 2,
-      imageName: './assets/homepage/photo_2.jpg',
+      imageName: './assets/homepage/fluffy-bag-2/fluffy-bag-2-uno.png',
       imageAlt: '',
-      productName: 'Foto 2',
+      productName: 'Fluffy Bag Numero Due',
       productDescription: ''
     },
     {
+      pathName: FluffyBagDetailId.fluffy_four,
       id: 3,
-      imageName: './assets/homepage/photo_3.jpg',
+      imageName: './assets/homepage/fluffy-bag-4/fluffy-bag-4-uno.png',
       imageAlt: '',
-      productName: 'Foto 3',
+      productName: 'Fluffy Bag Numero Quattro',
       productDescription: ''
     },
+    /*
     {
+      pathName: FluffyBagDetailId.fluffy_four,
       id: 4,
-      imageName: './assets/homepage/photo_4.jpg',
+      imageName: './assets/homepage/fluffy-bag-5/fluffy-bag-5-uno.png',
       imageAlt: '',
       productName: 'Foto 1',
       productDescription: ''
     },
+    */
     {
+      pathName: FluffyBagDetailId.fluffyFive,
       id: 5,
-      imageName: './assets/homepage/photo_5.jpg',
+      imageName: './assets/homepage/fluffy-bag-6/fluffy-bag-6-uno.png',
       imageAlt: '',
-      productName: 'Foto 2',
+      productName: 'Fluffy Bag Numero Cinque',
       productDescription: ''
     },
     {
+      pathName: FluffyBagDetailId.fluffySeven,
       id: 6,
-      imageName: './assets/homepage/photo_6.jpg',
+      imageName: './assets/homepage/fluffy-bag-7/fluffy-bag-7-uno.png',
       imageAlt: '',
-      productName: 'Foto 3',
+      productName: 'Fluffy Bag Numero Sette',
       productDescription: ''
     },
     {
+      pathName: FluffyBagDetailId.fluffyEight,
       id: 7,
-      imageName: './assets/homepage/photo_7.jpg',
+      imageName: './assets/homepage/fluffy-bag-8/fluffy-bag-8-uno.png',
       imageAlt: '',
-      productName: 'Foto 1',
+      productName: 'Fluffy Bag Numero Otto',
       productDescription: ''
     },
     {
+      pathName: FluffyBagDetailId.fluffyEleven,
       id: 8,
-      imageName: './assets/homepage/photo_8.jpg',
+      imageName: './assets/homepage/fluffy-bag-11/fluffy-bag-11-uno.png',
       imageAlt: '',
-      productName: 'Foto 2',
+      productName: 'Fluffy Bag Numero Undici',
       productDescription: ''
     },
     {
+      pathName: FluffyBagDetailId.fluffyTwelve,
       id: 9,
-      imageName: './assets/homepage/photo_9.jpg',
+      imageName: './assets/homepage/fluffy-bag-12/fluffy-bag-12-uno.png',
       imageAlt: '',
-      productName: 'Foto 3',
-      productDescription: ''
-    },
-    {
-      id: 11,
-      imageName: './assets/homepage/photo_11.jpg',
-      imageAlt: '',
-      productName: 'Foto 2',
-      productDescription: ''
-    },
-    {
-      id: 12,
-      imageName: './assets/homepage/photo_12.jpg',
-      imageAlt: '',
-      productName: 'Foto 3',
-      productDescription: ''
-    },
-    {
-      id: 13,
-      imageName: './assets/homepage/photo_13.jpg',
-      imageAlt: '',
-      productName: 'Foto 1',
-      productDescription: ''
-    },
-    {
-      id: 14,
-      imageName: './assets/homepage/photo_14.jpg',
-      imageAlt: '',
-      productName: 'Foto 2',
-      productDescription: ''
-    },
-    {
-      id: 15,
-      imageName: './assets/homepage/photo_15.jpg',
-      imageAlt: '',
-      productName: 'Foto 3',
-      productDescription: ''
-    },
-    {
-      id: 16,
-      imageName: './assets/homepage/photo_16.jpg',
-      imageAlt: '',
-      productName: 'Foto 1',
-      productDescription: ''
-    },
-    {
-      id: 17,
-      imageName: './assets/homepage/photo_17.jpg',
-      imageAlt: '',
-      productName: 'Foto 2',
-      productDescription: ''
-    },
-    {
-      id: 18,
-      imageName: './assets/homepage/photo_18.jpg',
-      imageAlt: '',
-      productName: 'Foto 3',
+      productName: 'Fluffy Bag Numero Dodici',
       productDescription: ''
     }
   ]
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(public dataservice: DataManager, private router: Router) {}
+
+  ngOnInit() { 
   }
 
   onContactButtonClick(productName: string): void {
     window.location.href = `mailto:${`fluffybag.italy@gmail.com?subject=Prodotto: ${productName}`}`;
+  }
+
+  onProductTapped(productName: string): void {
+    this.router.navigate(['/dettagli', productName]);
   }
 }

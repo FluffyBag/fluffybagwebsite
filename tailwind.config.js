@@ -2,7 +2,7 @@ module.exports = {
   prefix: '',
   purge: {
     content: [
-      './src/**/*.{html,ts}',
+      './src/**/*.{html,ts}'
     ]
   },
   darkMode: 'class', 
@@ -19,5 +19,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('tw-elements/dist/plugin')
   ],
 };
