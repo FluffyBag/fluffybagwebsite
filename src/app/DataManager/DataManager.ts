@@ -4,9 +4,9 @@ export class DataManager {
 
 export enum FluffyBagDetailId {
     fluffyOne = "fluffyBagUno",
+    fluffyTwo = "fluffyBagDue",
     // New
     fluffyThree = "fluffyBagTre",
-    fluffyTwo = "fluffyBagDue",
     fluffyFour = "fluffyBagTre",
     fluffyFive = "fluffyBagQuattro",
     fluffySix = "fluffyBagSei",
@@ -14,6 +14,8 @@ export enum FluffyBagDetailId {
     fluffyEight = 'fluffyBagOtto',
     // New
     fluffyNine = "fluffyBagNove",
+     // New
+    fluffyTen = "fluffyBagTen",
     fluffyEleven = 'fluffyBagUndici',
     fluffyTwelve = 'fluffyBagDodici',
     // New
@@ -24,6 +26,4 @@ export enum FluffyBagDetailId {
     fluffyFifteen = "fluffyBagQuindici",
     // New
     fluffySixteen = "fluffyBagSedici",
-    // New
-    fluffyTen = "fluffyBagTen",
   }
