@@ -13,7 +13,7 @@ export class HomepageComponent implements OnInit {
 
   productStructure = [
     {
-      pathName: FluffyBagDetailId.fluffy_one,
+      pathName: FluffyBagDetailId.fluffyOne,
       id: 1,
       imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-1-uno.png',
       imageAlt: '',
@@ -21,7 +21,7 @@ export class HomepageComponent implements OnInit {
       productDescription: ''
     },
     {
-      pathName: FluffyBagDetailId.fluffy_two,
+      pathName: FluffyBagDetailId.fluffyTwo,
       id: 2,
       imageName: './assets/homepage/fluffy-bag-2/fluffy-bag-2-uno.png',
       imageAlt: '',
@@ -29,7 +29,7 @@ export class HomepageComponent implements OnInit {
       productDescription: ''
     },
     {
-      pathName: FluffyBagDetailId.fluffy_four,
+      pathName: FluffyBagDetailId.fluffyFour,
       id: 3,
       imageName: './assets/homepage/fluffy-bag-4/fluffy-bag-4-uno.png',
       imageAlt: '',
@@ -49,14 +49,22 @@ export class HomepageComponent implements OnInit {
     {
       pathName: FluffyBagDetailId.fluffyFive,
       id: 5,
-      imageName: './assets/homepage/fluffy-bag-6/fluffy-bag-6-uno.png',
+      imageName: './assets/homepage/fluffy-bag-5/fluffy-bag-5-uno.png',
       imageAlt: '',
       productName: 'Fluffy Bag Numero Cinque',
       productDescription: ''
     },
     {
-      pathName: FluffyBagDetailId.fluffySeven,
+      pathName: FluffyBagDetailId.fluffySix,
       id: 6,
+      imageName: './assets/homepage/fluffy-bag-6/fluffy-bag-6-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag Numero Sei',
+      productDescription: ''
+    },
+    {
+      pathName: FluffyBagDetailId.fluffySeven,
+      id: 7,
       imageName: './assets/homepage/fluffy-bag-7/fluffy-bag-7-uno.png',
       imageAlt: '',
       productName: 'Fluffy Bag Numero Sette',
@@ -64,7 +72,7 @@ export class HomepageComponent implements OnInit {
     },
     {
       pathName: FluffyBagDetailId.fluffyEight,
-      id: 7,
+      id: 8,
       imageName: './assets/homepage/fluffy-bag-8/fluffy-bag-8-uno.png',
       imageAlt: '',
       productName: 'Fluffy Bag Numero Otto',
@@ -72,7 +80,7 @@ export class HomepageComponent implements OnInit {
     },
     {
       pathName: FluffyBagDetailId.fluffyEleven,
-      id: 8,
+      id: 11,
       imageName: './assets/homepage/fluffy-bag-11/fluffy-bag-11-uno.png',
       imageAlt: '',
       productName: 'Fluffy Bag Numero Undici',
@@ -80,7 +88,7 @@ export class HomepageComponent implements OnInit {
     },
     {
       pathName: FluffyBagDetailId.fluffyTwelve,
-      id: 9,
+      id: 12,
       imageName: './assets/homepage/fluffy-bag-12/fluffy-bag-12-uno.png',
       imageAlt: '',
       productName: 'Fluffy Bag Numero Dodici',
