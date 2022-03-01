@@ -5,25 +5,27 @@ export class DataManager {
 export enum FluffyBagDetailId {
     fluffyOne = "fluffyBagUno",
     fluffyTwo = "fluffyBagDue",
-    // New
     fluffyThree = "fluffyBagTre",
-    fluffyFour = "fluffyBagTre",
-    fluffyFive = "fluffyBagQuattro",
+    fluffyFour = "fluffyBagQuattro",
+    fluffyFive = "fluffyBagCinque",
     fluffySix = "fluffyBagSei",
     fluffySeven = "fluffyBagSette",
     fluffyEight = 'fluffyBagOtto',
-    // New
     fluffyNine = "fluffyBagNove",
-     // New
     fluffyTen = "fluffyBagTen",
     fluffyEleven = 'fluffyBagUndici',
     fluffyTwelve = 'fluffyBagDodici',
-    // New
     fluffyThirteen = 'fluffyBagTredici',
-    // New
     fluffyFourteen = "fluffyBagQuattordici",
-    // New
     fluffyFifteen = "fluffyBagQuindici",
-    // New
     fluffySixteen = "fluffyBagSedici",
+    fluffySeventeen = "fluffyBagDiciassette",
+    fluffyEigtheen = "fluffyBagDiciotto",
+    fluffyNineteen = "fluffyBagDiciannove",
+    fluffyTwenty = "fluffyBagVenti",
+    fluffyTwentyOne = "fluffyVentuno",
+    fluffyTwentyThree = "fluffyVentitre",
+    fluffyTwentyFour = "fluffyVentiquattro",
+    fluffyTwentyFive = "fluffyVenticinque",
+    fluffyTwentySix = "fluffyVentisei"
   }

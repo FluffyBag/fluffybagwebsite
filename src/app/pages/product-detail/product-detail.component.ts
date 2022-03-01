@@ -13,26 +13,27 @@ export class ProductDetailComponent implements OnInit {
 
   fluffyBag = {} as FluffyBagDetail;
 
-  hero: string | undefined; 
+  hero: string | undefined;
 
-  constructor(public dataservice: DataManager, private _Activatedroute:ActivatedRoute) {}
+  constructor(public dataservice: DataManager, private _Activatedroute: ActivatedRoute) { }
 
   onContactButtonClick(productName: string): void {
     window.location.href = `mailto:${`fluffybag.italy@gmail.com?subject=Prodotto: ${productName}`}`;
   }
-  
+
   ngOnInit() {
     window.scrollTo(0, 0);
     const fluffyBagId: FluffyBagDetailId = this._Activatedroute.snapshot.paramMap.get("id") as FluffyBagDetailId;
     console.log(fluffyBagId);
-    
+
     switch (fluffyBagId) {
       case FluffyBagDetailId.fluffyOne:
         this.fluffyBag = {
           nome: 'Fluffy Bag 1 mod. Anna',
           imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-1-uno.png',
           moreImages: [
-            './assets/homepage/fluffy-bag-1/fluffy-bag-1-due.png'
+            './assets/homepage/fluffy-bag-1/fluffy-bag-1-due.png',
+            './assets/homepage/fluffy-bag-1/fluffy-bag-1-tre.png'
           ],
           descrizioneSinistra: 'Shopper in filcoupè dis.ramage. Colore :(verde/rosa) Tessuto made int Italy.',
           descrizioneDestra: 'Altezza cm 40 ,larghezza cm32. Pannello frontale in fil coupé ramage con lavorazione in rilievo, mentre il pannello posteriore è in satin trapuntato a riga verde Mility.Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.'
@@ -47,14 +48,26 @@ export class ProductDetailComponent implements OnInit {
           ],
           descrizioneSinistra: 'Shopper in flower jacquard ,colore( turchese/nero su fondo nocciola Tessuto made in Italy',
           descrizioneDestra: 'Altezza cm 40, larghezza cm32. Pannello frontale in flore jacquard, mentre il pannello posteriore è in microfibra nera trapuntata a quadro. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è turchese. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.'
-        } 
+        }
+        break;
+      case FluffyBagDetailId.fluffyThree:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.3 mod. Ily',
+          imageName: './assets/homepage/fluffy-bag-3/fluffy-bag-3-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-3/fluffy-bag-3-due.png',
+            './assets/homepage/fluffy-bag-3/fluffy-bag-3-tre.png'
+          ],
+          descrizioneSinistra: 'Shopper Bag in velvet Jacquard’,colore grigio/viola very pery colore dell’anno 2022',
+          descrizioneDestra: 'Altezza cm 40 ,larghezza cm 32.Pannello frontale in jacquard geometrico, mentre il pannello posteriore è in satin trapuntato a quadro nero La borsa è interamente imbottita con ovatta morbida. Il fiocco in velluto è grigio perla. Manici imbottiti H.12 cm Tracolla imbottita lungh.a.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto made in (UK)',
+        }
         break;
       case FluffyBagDetailId.fluffyFour:
         this.fluffyBag = {
           nome: 'Fluffy Bag N.4 mod. Matilde',
           imageName: './assets/homepage/fluffy-bag-4/fluffy-bag-4-uno.png',
           moreImages: [
-            
+            './assets/homepage/fluffy-bag-4/fluffy-bag-4-due.png'
           ],
           descrizioneSinistra: 'Shopper in jacquard goffrato disegno vortice, colore (Verde oliva/panna e marrone terra) Tessuto made in Italy',
           descrizioneDestra: 'Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard disegno vortice, mentre il pannello posteriore è satin trapuntato riga verde Mility. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è nero. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
@@ -71,20 +84,20 @@ export class ProductDetailComponent implements OnInit {
           descrizioneDestra: 'Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard disegno geometrico puntato, mentre il pannello posteriore è realizzato in tessuto trapuntato dis. Spina pesce . La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è marrone. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
         }
         break;
-        case FluffyBagDetailId.fluffySix:
-          this.fluffyBag = {
-            nome: 'Fluffy Bag N.6 mod Melany',
-            imageName: './assets/homepage/fluffy-bag-6/fluffy-bag-6-uno.png',
-            moreImages: [
-              './assets/homepage/fluffy-bag-6/fluffy-bag-6-due.png'
-            ],
-            descrizioneSinistra: 'Shopper realizzata in jacquard di seta originale Indonesiano . Colori; Fuxia petrolio convochi di giallo oro.',
-            descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale in jacquard con disegnature geometriche che creano delle righe irregolari , mentre il pannello del retro è realizzato in satin trapuntato aria color petrolio. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde Pavone. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Indonesia.',
-          }
-          break;
+      case FluffyBagDetailId.fluffySix:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.6 mod Melany',
+          imageName: './assets/homepage/fluffy-bag-6/fluffy-bag-6-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-6/fluffy-bag-6-due.png'
+          ],
+          descrizioneSinistra: 'Shopper realizzata in jacquard di seta originale Indonesiano . Colori; Fuxia petrolio convochi di giallo oro.',
+          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale in jacquard con disegnature geometriche che creano delle righe irregolari , mentre il pannello del retro è realizzato in satin trapuntato aria color petrolio. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde Pavone. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Indonesia.',
+        }
+        break;
       case FluffyBagDetailId.fluffySeven:
         this.fluffyBag = {
-          nome: 'Fluffy Bag N.7 mod. Matty ',
+          nome: 'Fluffy Bag N.7 mod. Matty',
           imageName: './assets/homepage/fluffy-bag-7/fluffy-bag-7-uno.png',
           moreImages: [
             './assets/homepage/fluffy-bag-7/fluffy-bag-7-due.png',
@@ -103,6 +116,30 @@ export class ProductDetailComponent implements OnInit {
           ],
           descrizioneSinistra: 'Shopper velvet Ikat geometrico 100% seta. Tessuto made in Turkey',
           descrizioneDestra: 'Altezza cm 40 ,larghezza cm32.Pannello frontale in velvet Ikat geometrico, mentre il pannello posteriore è in trapuntato Black disegno spina di pesce. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è viola. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Turkey.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyNine:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.9 mod. Patty',
+          imageName: './assets/homepage/fluffy-bag-9/fluffy-bag-9-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-9/fluffy-bag-9-due.png'
+          ],
+          descrizioneSinistra: 'Shopper in satin Silver flower .Colore , fondo silver con rose e foglie nere .',
+          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale satin silver con fiori e rose stilizzate , mentre il pannello del retro è in nylon nero trapuntato a spina di pesce. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde viola. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyTen:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.10 mod Nel',
+          imageName: './assets/homepage/fluffy-bag-10/fluffy-bag-10-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-10/fluffy-bag-10-due.png',
+            './assets/homepage/fluffy-bag-10/fluffy-bag-10-tre.png',
+            './assets/homepage/fluffy-bag-10/fluffy-bag-10-quattro.png'
+          ],
+          descrizioneSinistra: 'Shopper realizzata in velvet Ikat100% seta multicolor . Colori;  fondo crema condisegnature a rombo bordeaux, blu e verde acqua.',
+          descrizioneDestra: 'ltezza cm 40, larghezza cm.32. Pannello frontale in velvet multicolor ja disegnature geometriche che creano dei rombi , mentre il pannello del retro è realizzato in satin trapuntato a quadro color blu Navy. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde Pavone. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Turkey.',
         }
         break;
       case FluffyBagDetailId.fluffyEleven:
@@ -127,32 +164,6 @@ export class ProductDetailComponent implements OnInit {
           ],
           descrizioneSinistra: 'Shopper in satin Flower Black. Colore black end white . Tessuto made in Italy',
           descrizioneDestra: 'Altezza cm 40, larghezza cm.32.Pannello frontale satin nero con fiori stilizzati bianchi.dis , mentre il pannello del retro in microfibra nera trapuntato a quadro. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde petrolio. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
-        } 
-        break;
-
-      //
-      // NEW HERE
-      //
-      case FluffyBagDetailId.fluffyThree:
-        this.fluffyBag = {
-          nome: 'Fluffy Bag N.3 mod. Ily',
-          imageName: './assets/homepage/fluffy-bag-3/fluffy-bag-3-uno.png',
-          moreImages: [
-
-          ],
-          descrizioneSinistra: 'Shopper Bag in velvet Jacquard’,colore grigio/viola very pery colore dell’anno 2022',
-          descrizioneDestra: 'Altezza cm 40 ,larghezza cm 32.Pannello frontale in jacquard geometrico, mentre il pannello posteriore è in satin trapuntato a quadro nero La borsa è interamente imbottita con ovatta morbida. Il fiocco in velluto è grigio perla. Manici imbottiti H.12 cm Tracolla imbottita lungh.a.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto made in (UK)',
-        }
-        break;
-      case FluffyBagDetailId.fluffyNine:
-        this.fluffyBag = {
-          nome: 'Fluffy Bag N.9 mod. Patty',
-          imageName: './assets/homepage/fluffy-bag-9/fluffy-bag-9-uno.png',
-          moreImages: [
-
-          ],
-          descrizioneSinistra: 'Shopper in satin Silver flower .Colore , fondo silver con rose e foglie nere .',
-          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale satin silver con fiori e rose stilizzate , mentre il pannello del retro è in nylon nero trapuntato a spina di pesce. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde viola. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
         }
         break;
       case FluffyBagDetailId.fluffyThirteen:
@@ -160,7 +171,8 @@ export class ProductDetailComponent implements OnInit {
           nome: 'Fluffy Bag N:13 mod Prya',
           imageName: './assets/homepage/fluffy-bag-13/fluffy-bag-13-uno.png',
           moreImages: [
-
+            './assets/homepage/fluffy-bag-13/fluffy-bag-13-due.png',
+            './assets/homepage/fluffy-bag-13/fluffy-bag-13-tre.png',
           ],
           descrizioneSinistra: 'Shopper velvet Ikat pop wave  100% seta. Colore: Fondo giallo oro con pois neri e effetti onda blu pavone. Tessuto made in Turkey',
           descrizioneDestra: 'Altezza cm 40 ,larghezza cm 32.Pannello frontale in velvet Ikat dis Pop , mentre il pannello posteriore è realizzato in trapuntato Black disegno spina di pesce. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è blu petrolio. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Turkey.',
@@ -171,45 +183,147 @@ export class ProductDetailComponent implements OnInit {
           nome: 'Fluffy Bag N.14 mod Loyal',
           imageName: './assets/homepage/fluffy-bag-14/fluffy-bag-14-uno.png',
           moreImages: [
-
+            './assets/homepage/fluffy-bag-14/fluffy-bag-14-due.png',
+            './assets/homepage/fluffy-bag-14/fluffy-bag-14-tre.png'
           ],
           descrizioneSinistra: 'Shopper realizzata in  Ikat shantung 100%seta. . Colori: Verde prato/Rosso cardinale grigio chiaro.',
-          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale in jacquard con disegno tipico dei tessuti Ikat .La disegnata grafica rappresenta dei fiori stilizzati, mentre il pannello del retro è realizzato in satin trapuntato a righe diagonali color granata. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde prato. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Turkey.', 
+          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale in jacquard con disegno tipico dei tessuti Ikat .La disegnata grafica rappresenta dei fiori stilizzati, mentre il pannello del retro è realizzato in satin trapuntato a righe diagonali color granata. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde prato. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Turkey.',
         }
         break;
       case FluffyBagDetailId.fluffyFifteen:
         this.fluffyBag = {
           nome: 'Fluffy Bag N.15 mod White butterflay',
-          imageName: './assets/homepage/fluffy-bag-15/fluffy-bag-12-uno.png',
+          imageName: './assets/homepage/fluffy-bag-15/fluffy-bag-15-uno.png',
           moreImages: [
-
+            './assets/homepage/fluffy-bag-15/fluffy-bag-15-due.png',
+            './assets/homepage/fluffy-bag-15/fluffy-bag-15-tre.png'
           ],
           descrizioneSinistra: 'Shopper realizzata in jacquard che porta come disegnatura un’ala di farfalla. Colori: Fondo bianco con punzonature nere eun’ ala di farfalla nera.',
-          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale in jacquard con disegnatura ad ala di farfalla , mentre il pannello del retro è realizzato in nylon nero trapuntato a spina di pesce. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è blu elettrico . Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.', 
+          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale in jacquard con disegnatura ad ala di farfalla , mentre il pannello del retro è realizzato in nylon nero trapuntato a spina di pesce. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è blu elettrico . Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
         }
         break;
       case FluffyBagDetailId.fluffySixteen:
         this.fluffyBag = {
-          nome: 'Fluffy Bag N.16 mod Black butterflay',
-          imageName: './assets/homepage/fluffy-bag-16/fluffy-bag-12-uno.png',
+          nome: 'Fluffy Bag N.16 mod Ada dis.black butterflay tessuto jacquard bianco e nero. made in Italy',
+          imageName: './assets/homepage/fluffy-bag-16/fluffy-bag-16-uno.png',
           moreImages: [
-
+            './assets/homepage/fluffy-bag-16/fluffy-bag-16-due.png',
+            './assets/homepage/fluffy-bag-16/fluffy-bag-16-tre.png'
           ],
-          descrizioneSinistra: 'Shopper realizzata in jacquard che porta come disegnatura un’ala di farfalla. Colori: Fondo black con punzonature bianche eun’ ala di farfalla bianca.',
-          descrizioneDestra: 'Altezza cm 40, larghezza cm.32. Pannello frontale in jacquard con disegnatura ad ala di farfalla , mentre il pannello del retro è realizzato in nylon nero trapuntato a spina di pesce. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è ciclamino . Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.', 
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard che disegna un’ala di farfalla con lavorazione in rilievo, mentre il pannello posteriore è in nylon nero trapuntato a spina di pesce .',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
         }
         break;
-      case FluffyBagDetailId.fluffyTen:
+      case FluffyBagDetailId.fluffySeventeen:
         this.fluffyBag = {
-          nome: 'Fluffy Bag N.10 mod Nel',
-          imageName: './assets/homepage/fluffy-bag-10/fluffy-bag-10-uno.png',
+          nome: 'Fluffy Bag N.17 mod pamela dis the mask tessuto jacquard disegno multicolor ( rosso tropea/azzurro ) made in Italy',
+          imageName: './assets/homepage/fluffy-bag-17/fluffy-bag-17-uno.png',
           moreImages: [
-
+            './assets/homepage/fluffy-bag-17/fluffy-bag-17-due.png',
+            './assets/homepage/fluffy-bag-17/fluffy-bag-17-tre.png',
+            './assets/homepage/fluffy-bag-17/fluffy-bag-17-quattro.png'
           ],
-          descrizioneSinistra: 'Shopper realizzata in velvet Ikat100% seta multicolor . Colori;  fondo crema condisegnature a rombo bordeaux, blu e verde acqua.',
-          descrizioneDestra: 'ltezza cm 40, larghezza cm.32. Pannello frontale in velvet multicolor ja disegnature geometriche che creano dei rombi , mentre il pannello del retro è realizzato in satin trapuntato a quadro color blu Navy. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è verde Pavone. Manici imbottiti H.12 cm Tracolla imbottita luna.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Turkey.',
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA. Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard multicolor raffigurante un patch di maschere che si intrecciano con disegnature geometriche, mentre il pannello posteriore è in nylon operato rosso cipolla di Tropea.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
         }
         break;
+      case FluffyBagDetailId.fluffyEigtheen:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.18 mod.rebecca dis.farfalle multicolor tessuto jacquard maldive multicolor ( nero/rosa/azzurro ) made in Italy',
+          imageName: './assets/homepage/fluffy-bag-18/fluffy-bag-18-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-18/fluffy-bag-18-due.png',
+            './assets/homepage/fluffy-bag-18/fluffy-bag-18-tre.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA. Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato raffigurante un patch di farfalle colorate, mentre il pannello posteriore è in nylon nero trapuntato a riga rosa fragola.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyNineteen:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.19 mod Mavi dis.tie ad dye tessuto jacquard bianco e blu denim. made in Italy',
+          imageName: './assets/homepage/fluffy-bag-19/fluffy-bag-19-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-19/fluffy-bag-19-due.png',
+            './assets/homepage/fluffy-bag-19/fluffy-bag-19-tre.png',
+            './assets/homepage/fluffy-bag-19/fluffy-bag-19-quattro.png'
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard con disegnata Tie ad dye, mentre il pannello posteriore è in nylon blu Navy trapuntato a rettangolo .',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyTwenty:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.20 mod Fushi Dis Palme Tropicali tessuto jacquard multicolor .( verde/azzurro e arancio) made in Italy',
+          imageName: './assets/homepage/fluffy-bag-20/fluffy-bag-20-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-20/fluffy-bag-20-due.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA. Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard raffigurante delle palme tropicali,mentre il pannello posteriore è in nylon arancio trapuntato a rombo .',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyTwentyOne:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.21 mod. Irene dis. golden end green tessuto jacquard goffrato(verde /oro e rosso rubino) made in Italy',
+          imageName: './assets/homepage/fluffy-bag-21/fluffy-bag-21-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-21/fluffy-bag-21-due.png',
+            './assets/homepage/fluffy-bag-21/fluffy-bag-21-tre.png',
+            './assets/homepage/fluffy-bag-21/fluffy-bag-21-quattro.png',
+            './assets/homepage/fluffy-bag-21/fluffy-bag-21-cinque.png'
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard balzing raffigurante un effetto onda stilizzato, mentre il pannello posteriore è in ecopelle gold trapuntato a cipolla.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyTwentyThree:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.23 mod Jole dis. Tartan tessuto jacquard verde bandiera/ giallo e blu cina. made in Italy',
+          imageName: './assets/homepage/fluffy-bag-23/fluffy-bag-23-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-23/fluffy-bag-23-due.png'
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA. Altezza cm 42 ,larghezza cm 30. Pannello frontale in jacquard un paesaggio tropicale con palme, mentre il pannello posteriore è in nylon verde petrolio trapuntato a riga.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyTwentyFour:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.24 mod Bruna dis.spring flowers tessuto jacquard grifio perla con fiori rosa pesca e giallolimeamade in italy',
+          imageName: './assets/homepage/fluffy-bag-24/fluffy-bag-24-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-24/fluffy-bag-24-due.png',
+            './assets/homepage/fluffy-bag-24/fluffy-bag-24-tre.png'
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA. Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard sottile con fiori delicati, mentre il pannello posteriore è in satin imbottito grigio perla .',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico ricoperto in raso interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyTwentyFive:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.25 mod Francesca dis.parrot multicolor tessuto jacquard goffrato multicolor,(silver/azzurro/rosso granata e giallo ) made in Italy',
+          imageName: './assets/homepage/fluffy-bag-25/fluffy-bag-25-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-25/fluffy-bag-25-due.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA. Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato con una fantasia di righe e pappagalli, mentre il pannello posteriore è in nylon satinato rosso granata.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+        case FluffyBagDetailId.fluffyTwentySix:
+          this.fluffyBag = {
+            nome: 'Fluffy Bag N.26 mod Roby dis.foglie grafiche tessuto jacquard ( nero/rosa/azzurro e giallino) made in italy',
+            imageName: './assets/homepage/fluffy-bag-26/fluffy-bag-26-uno.png',
+            moreImages: [
+              './assets/homepage/fluffy-bag-26/fluffy-bag-26-due.png',
+              './assets/homepage/fluffy-bag-26/fluffy-bag-26-tre.png',
+              './assets/homepage/fluffy-bag-26/fluffy-bag-26-quattro.png',
+            ],
+            descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato raffigurante un patch di foglie grafiche, mentre il pannello posteriore è in nylon nero trapuntato a quadro.',
+            descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+          }
+          break;
     }
   }
 }
