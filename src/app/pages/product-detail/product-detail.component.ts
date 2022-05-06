@@ -311,19 +311,151 @@ export class ProductDetailComponent implements OnInit {
           descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
         }
         break;
-        case FluffyBagDetailId.fluffyTwentySix:
-          this.fluffyBag = {
-            nome: 'Fluffy Bag N.26 mod Roby dis.foglie grafiche tessuto jacquard ( nero/rosa/azzurro e giallino) made in italy',
-            imageName: './assets/homepage/fluffy-bag-26/fluffy-bag-26-uno.png',
-            moreImages: [
-              './assets/homepage/fluffy-bag-26/fluffy-bag-26-due.png',
-              './assets/homepage/fluffy-bag-26/fluffy-bag-26-tre.png',
-              './assets/homepage/fluffy-bag-26/fluffy-bag-26-quattro.png',
-            ],
-            descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato raffigurante un patch di foglie grafiche, mentre il pannello posteriore è in nylon nero trapuntato a quadro.',
-            descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
-          }
-          break;
+      case FluffyBagDetailId.fluffyTwentySix:
+        this.fluffyBag = {
+          nome: 'Fluffy Bag N.26 mod Roby dis.foglie grafiche tessuto jacquard ( nero/rosa/azzurro e giallino) made in italy',
+          imageName: './assets/homepage/fluffy-bag-26/fluffy-bag-26-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-26/fluffy-bag-26-due.png',
+            './assets/homepage/fluffy-bag-26/fluffy-bag-26-tre.png',
+            './assets/homepage/fluffy-bag-26/fluffy-bag-26-quattro.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato raffigurante un patch di foglie grafiche, mentre il pannello posteriore è in nylon nero trapuntato a quadro.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
+        }
+        break;
+
+
+
+
+
+
+
+      case FluffyBagDetailId.fluffyThirty:
+        this.fluffyBag = {
+          nome: 'N.30 FLUFFY MOD. Luce DIS. ramage embroidered TESSUTO JACQUARD ( light grey ) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-30/fluffy-bag-30-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-30/fluffy-bag-30-due.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard ramage ricamato a mano. raffigurante un ramo con fiori primaverili e foglie. il pannello posteriore è in tessuto laminato silver.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso è cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtyOne:
+        this.fluffyBag = {
+          nome: 'N.31 FLUFFY MOD. Licia DIS. ramage embroidered TESSUTO JACQUARD (lillac/pink) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-31/fluffy-bag-31-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-31/fluffy-bag-31-due.png'
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard ramage ricamato a mano. raffigurante un ramo con fiori primaverili e foglie. il pannello posteriore è in tessuto laminato pink.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso è cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtyTwo:
+        this.fluffyBag = {
+          nome: 'N.32 FLUFFY MOD.Karim DIS. ramage embroidered TESSUTO JACQUARD (Yellow ,salmone, orange and Green) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-32/fluffy-bag-32-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-32/fluffy-bag-32-due.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard floreale ricamato a mano. raffigurante fiori foglie multicolor nelle tonalità pastello. il pannello posteriore è in tessuto laminato yellow.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso è cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtyThree:
+        this.fluffyBag = {
+          nome: 'N.33 FLUFFY MOD.Daria DIS. ramage embroidered TESSUTO JACQUARD (camel with touches of purple bello and orange ) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-33/fluffy-bag-33-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-33/fluffy-bag-33-due.png'
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard ramage ricamato a mano. raffigurante un ramo con fiori primaverili e foglie. il pannello posteriore è in tessuto laminato yellow.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso è cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtyFour:
+        this.fluffyBag = {
+          nome: 'N.34 FLUFFY MOD.Ambra DIS.Parrot silver TESSUTO JACQUARD goffrato con palme e pappagalli ( Silver Gray , pink and corale red. MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-34/fluffy-bag-34-uno.png',
+          moreImages: [
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia di palme e pappagalli. il pannello posteriore è in tessuto laminato light pink.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso è cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtyFive:
+        this.fluffyBag = {
+          nome: 'N.35 FLUFFY MOD.Prisca DIS .Decor Flowers TESSUTO JACQUARD degradèe (Lemon yellow and tangerine ) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-35/fluffy-bag-35-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-35/fluffy-bag-35-due.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con decorazioni astratte . il pannello posteriore è in nylon impalpabile yellow.',
+          descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtySix:
+        this.fluffyBag = {
+          nome: 'N.36 FLUFFY MOD.Fede DIS Jacquards Ramage embroidered TESSUTO JACQUARD (Yellow,salmone orange and Green ) Made in Italy',
+          imageName: './assets/homepage/fluffy-bag-36/fluffy-bag-36-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-36/fluffy-bag-36-due.png',
+            './assets/homepage/fluffy-bag-36/fluffy-bag-36-tre.png',
+          ],
+          descrizioneSinistra: 'SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con decorazioni astratte .La borsa è ricamata a mano con canutiglie di vetro. il pannello posteriore è in nylon impalpabile grey',
+          descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtySeven:
+        this.fluffyBag = {
+          nome: 'N.37 FLUFFY MOD. Josè DIS Macro.Decor Flowers TESSUTO JACQUARD (Light pink end Gray ) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-37/fluffy-bag-37-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-37/fluffy-bag-37-due.png',
+            './assets/homepage/fluffy-bag-37/fluffy-bag-37-tre.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con decorazioni astratte . il pannello posteriore è in nylon impalpabile Grey.',
+          descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtyEight:
+        this.fluffyBag = {
+          nome: 'N.38 FLUFFY MOD.Thierry. DIS .Decor Flowers TESSUTO JACQUARD con fiori e foglie (Lilla base with light blue and tabacco) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-38/fluffy-bag-38-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-38/fluffy-bag-38-due.png',
+            './assets/homepage/fluffy-bag-38/fluffy-bag-38-tre.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con fiori e foglie dai toni pastelli. il pannello posteriore è in nylon impalpabile gray.',
+          descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyThirtyNine:
+        this.fluffyBag = {
+          nome: 'N.39 FLUFFY MOD.Sacha . DIS .Decor flower. TESSUTO JACQUARD flowerpot (blue and camel) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-39/fluffy-bag-39-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-39/fluffy-bag-39-due.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con fiori e foglie dai toni pastelli. il pannello posteriore è in nylon impalpabile camel',
+          descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+      case FluffyBagDetailId.fluffyForty:
+        this.fluffyBag = {
+          nome: 'N.40 FLUFFY MOD.Peggy. DIS .Decor Flowers TESSUTO JACQUARD decori grafici (amarant.pink) MADE IN ITALY',
+          imageName: './assets/homepage/fluffy-bag-40/fluffy-bag-40-uno.png',
+          moreImages: [
+            './assets/homepage/fluffy-bag-40/fluffy-bag-40-due.png',
+            './assets/homepage/fluffy-bag-40/fluffy-bag-40-tre.png',
+          ],
+          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con fiori e foglie dai toni pastelli. il pannello posteriore è in nylon impalpabile light pink',
+          descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        }
+        break;
+
     }
   }
 }

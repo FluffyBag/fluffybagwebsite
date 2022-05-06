@@ -11,6 +11,108 @@ import { FluffyBagDetailId } from 'src/app/DataManager/DataManager';
 })
 export class HomepageComponent implements OnInit {
 
+  amatoriCapsuleStructure = [
+    {
+      pathName: FluffyBagDetailId.fluffyThirty,
+      id: 30,
+      imageName: './assets/homepage/fluffy-bag-30/fluffy-bag-30-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 30 MOD. Luce',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtyOne,
+      id: 31,
+      imageName: './assets/homepage/fluffy-bag-31/fluffy-bag-31-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 31 MOD. Licia',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtyTwo,
+      id: 32,
+      imageName: './assets/homepage/fluffy-bag-32/fluffy-bag-32-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 32 MOD.Karim',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtyThree,
+      id: 33,
+      imageName: './assets/homepage/fluffy-bag-33/fluffy-bag-33-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 33 MOD.Daria',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtyFour,
+      id: 34,
+      imageName: './assets/homepage/fluffy-bag-34/fluffy-bag-34-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 34 MOD.Ambra',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtyFive,
+      id: 35,
+      imageName: './assets/homepage/fluffy-bag-35/fluffy-bag-35-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 35 MOD.Prisca',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtySix,
+      id: 36,
+      imageName: './assets/homepage/fluffy-bag-36/fluffy-bag-36-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 36 MOD.Fede',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtySeven,
+      id: 37,
+      imageName: './assets/homepage/fluffy-bag-37/fluffy-bag-37-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 37 MOD. Josè',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtyEight,
+      id: 38,
+      imageName: './assets/homepage/fluffy-bag-38/fluffy-bag-38-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 38 MOD.Thierry.',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirtyNine,
+      id: 39,
+      imageName: './assets/homepage/fluffy-bag-39/fluffy-bag-39-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 39 MOD.Sacha',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyForty,
+      id: 40,
+      imageName: './assets/homepage/fluffy-bag-40/fluffy-bag-40-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 40 MOD.Peggy',
+      productDescription: '',
+      isSoldOut: false
+    }
+  ]
+
   productStructure = [
     {
       pathName: FluffyBagDetailId.fluffyOne,
@@ -206,7 +308,7 @@ export class HomepageComponent implements OnInit {
       id: 23,
       imageName: './assets/homepage/fluffy-bag-23/fluffy-bag-23-uno.png',
       imageAlt: '',
-      productName: 'Fluffy Bag N.21 mod Jole',
+      productName: 'Fluffy Bag N.23 mod Jole',
       productDescription: '',
       isSoldOut: false
     },
@@ -236,106 +338,7 @@ export class HomepageComponent implements OnInit {
       productName: 'Fluffy Bag N.26 mod Roby',
       productDescription: '',
       isSoldOut: false
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyThirty,
-      id: 30,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-30-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 30 MOD. Luce',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyThirtyOne,
-      id: 31,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-31-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 31 MOD. Licia',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyThirtyTwo,
-      id: 32,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-32-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-33-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-34-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-35-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-36-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-37-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-38-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-39-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-40-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
+    }
   ]
 
   constructor(public dataservice: DataManager, private router: Router) { }
