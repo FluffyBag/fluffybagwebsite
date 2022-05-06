@@ -36,8 +36,8 @@ export enum FluffyBagDetailId {
     fluffyThirtyFour = "fluffyTrentaquattro",
     fluffyThirtyFive = "fluffyTrentacinque",
     fluffyThirtySix = "fluffyTrentasei",
-    fluffyThirtySette = "fluffyTrentasette",
+    fluffyThirtySeven = "fluffyTrentasette",
     fluffyThirtyEight = "fluffyTrentotto",
     fluffyThirtyNine = "fluffyTrentanove",
-    fluffyforty = "fluffyQuaranta",
+    fluffyForty = "fluffyQuaranta",
   }
