@@ -2,6 +2,13 @@ export class DataManager {
     public selectedFluffyBag: string = '';
 }
 
+export enum BagsFilterEnum {
+    All = 'Tutte',
+    Jaquard = 'Jaquard',
+    Ikat = 'Ikat',
+    Foulard = 'Foulard',
+  }
+
 export enum FluffyBagDetailId {
     fluffyOne = "fluffyBagUno",
     fluffyTwo = "fluffyBagDue",
@@ -28,7 +35,6 @@ export enum FluffyBagDetailId {
     fluffyTwentyFour = "fluffyVentiquattro",
     fluffyTwentyFive = "fluffyVenticinque",
     fluffyTwentySix = "fluffyVentisei",
-
     fluffyThirty = "fluffyTrenta",
     fluffyThirtyOne = "fluffyTrentuno",
     fluffyThirtyTwo = "fluffyTrentadue",

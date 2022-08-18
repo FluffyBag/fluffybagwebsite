@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { DataManager } from 'src/app/DataManager/DataManager';
 import 'tw-elements';
 import { FluffyBagDetailId } from 'src/app/DataManager/DataManager';
+import { BagsFilterEnum } from 'src/app/DataManager/DataManager'
 
 @Component({
   selector: 'app-homepage',
@@ -10,6 +11,32 @@ import { FluffyBagDetailId } from 'src/app/DataManager/DataManager';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
+
+  currentSelectedFilter: BagsFilterEnum = BagsFilterEnum.All;
+
+  bagsFilter: BagsFilterEnum[] = [
+    BagsFilterEnum.All,
+    BagsFilterEnum.Foulard,
+    BagsFilterEnum.Ikat,
+    BagsFilterEnum.Jaquard
+  ];
+
+  changeCurrentFilterSelection(filterSelected: BagsFilterEnum): void {
+    this.currentSelectedFilter = filterSelected;
+  }
+
+  getCurrentArray(): any {
+    switch (this.currentSelectedFilter) {
+      case BagsFilterEnum.All:
+        return [...this.jaquardStructure,...this.ikatStructure]
+      case BagsFilterEnum.Foulard:
+        return []
+      case BagsFilterEnum.Jaquard:
+        return this.jaquardStructure
+      case BagsFilterEnum.Ikat:
+        return this.ikatStructure
+    }
+  }
 
   amatoriCapsuleStructure = [
     {
@@ -113,16 +140,7 @@ export class HomepageComponent implements OnInit {
     }
   ]
 
-  productStructure = [
-    {
-      pathName: FluffyBagDetailId.fluffyOne,
-      id: 1,
-      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-1-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag 1 mod. Anna',
-      productDescription: '',
-      isSoldOut: true
-    },
+  jaquardStructure = [
     {
       pathName: FluffyBagDetailId.fluffyTwo,
       id: 2,
@@ -178,65 +196,11 @@ export class HomepageComponent implements OnInit {
       isSoldOut: true
     },
     {
-      pathName: FluffyBagDetailId.fluffyEight,
-      id: 8,
-      imageName: './assets/homepage/fluffy-bag-8/fluffy-bag-8-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag N.8 mod. Nur',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyNine,
-      id: 9,
-      imageName: './assets/homepage/fluffy-bag-9/fluffy-bag-9-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag N.9 mod. Patty',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyTen,
-      id: 10,
-      imageName: './assets/homepage/fluffy-bag-10/fluffy-bag-10-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag N.10 mod Nel',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
       pathName: FluffyBagDetailId.fluffyEleven,
       id: 11,
       imageName: './assets/homepage/fluffy-bag-11/fluffy-bag-11-uno.png',
       imageAlt: '',
       productName: 'Fluffy Bag N:11 mod Tiger',
-      productDescription: '',
-      isSoldOut: false
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyTwelve,
-      id: 12,
-      imageName: './assets/homepage/fluffy-bag-12/fluffy-bag-12-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag N.12 mod Denny',
-      productDescription: '',
-      isSoldOut: true
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyThirteen,
-      id: 13,
-      imageName: './assets/homepage/fluffy-bag-13/fluffy-bag-13-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag N:13 mod Prya',
-      productDescription: '',
-      isSoldOut: false
-    },
-    {
-      pathName: FluffyBagDetailId.fluffyFourteen,
-      id: 14,
-      imageName: './assets/homepage/fluffy-bag-14/fluffy-bag-14-uno.png',
-      imageAlt: '',
-      productName: 'Fluffy Bag N.14 mod Loyal',
       productDescription: '',
       isSoldOut: false
     },
@@ -338,6 +302,76 @@ export class HomepageComponent implements OnInit {
       productName: 'Fluffy Bag N.26 mod Roby',
       productDescription: '',
       isSoldOut: false
+    }
+  ]
+
+  ikatStructure = [
+    {
+      pathName: FluffyBagDetailId.fluffyEight,
+      id: 8,
+      imageName: './assets/homepage/fluffy-bag-8/fluffy-bag-8-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag N.8 mod. Nur',
+      productDescription: '',
+      isSoldOut: true
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyThirteen,
+      id: 13,
+      imageName: './assets/homepage/fluffy-bag-13/fluffy-bag-13-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag N:13 mod Prya',
+      productDescription: '',
+      isSoldOut: false
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyFourteen,
+      id: 14,
+      imageName: './assets/homepage/fluffy-bag-14/fluffy-bag-14-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag N.14 mod Loyal',
+      productDescription: '',
+      isSoldOut: false
+    }
+  ]
+  
+  productStructure = [
+    {
+      pathName: FluffyBagDetailId.fluffyOne,
+      id: 1,
+      imageName: './assets/homepage/fluffy-bag-1/fluffy-bag-1-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag 1 mod. Anna',
+      productDescription: '',
+      isSoldOut: true
+    },
+
+    {
+      pathName: FluffyBagDetailId.fluffyNine,
+      id: 9,
+      imageName: './assets/homepage/fluffy-bag-9/fluffy-bag-9-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag N.9 mod. Patty',
+      productDescription: '',
+      isSoldOut: true
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyTen,
+      id: 10,
+      imageName: './assets/homepage/fluffy-bag-10/fluffy-bag-10-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag N.10 mod Nel',
+      productDescription: '',
+      isSoldOut: true
+    },
+    {
+      pathName: FluffyBagDetailId.fluffyTwelve,
+      id: 12,
+      imageName: './assets/homepage/fluffy-bag-12/fluffy-bag-12-uno.png',
+      imageAlt: '',
+      productName: 'Fluffy Bag N.12 mod Denny',
+      productDescription: '',
+      isSoldOut: true
     }
   ]
 
