@@ -11,7 +11,7 @@ import { FluffyBagDetailId } from 'src/app/DataManager/DataManager';
 })
 export class ProductDetailComponent implements OnInit {
 
-  fluffyBag = {} as FluffyBagDetail;
+  fluffyBag = [] as any
 
   hero: string | undefined;
 
@@ -24,7 +24,8 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     const fluffyBagId: FluffyBagDetailId = this._Activatedroute.snapshot.paramMap.get("id") as FluffyBagDetailId;
-    console.log(fluffyBagId);
+
+    this.fluffyBag = this.dataservice.productStructure.filter( bag => bag.pathName === fluffyBagId )
 
     switch (fluffyBagId) {
       case FluffyBagDetailId.fluffyOne:
@@ -324,13 +325,6 @@ export class ProductDetailComponent implements OnInit {
           descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.',
         }
         break;
-
-
-
-
-
-
-
       case FluffyBagDetailId.fluffyThirty:
         this.fluffyBag = {
           nome: 'N.30 FLUFFY MOD. Luce DIS. ramage embroidered TESSUTO JACQUARD ( light grey ) MADE IN ITALY',

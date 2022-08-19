@@ -5,7 +5,7 @@
   <h1 class="text-4xl pt-8 text-greenFluffyBag lg:text-xl"> Capsule primavera estate 2022 presentata presso l'idea di Luisa Amatori</h1>
 
   <div class="flex justify-between flex-wrap pb-8">
-    <div *ngFor="let data of amatoriCapsuleStructure" class=" w-1/3 lg:w-full py-8 cursor-pointer text-center">
+    <div *ngFor="let data of getLuisaAmatoriCapsue()" class=" w-1/3 lg:w-full py-8 cursor-pointer text-center">
       <div (click)="onProductTapped(data.pathName)" class="hover:opacity-75">
         <img src={{data.imageName}} class="object-contain h-64 w-64 margin-zero-auto pb-4" alt={{data.imageAlt}} />
 
