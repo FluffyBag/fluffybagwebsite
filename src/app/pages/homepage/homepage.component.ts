@@ -18,7 +18,8 @@ export class HomepageComponent implements OnInit {
     BagsFilterEnum.All,
     BagsFilterEnum.Foulard,
     BagsFilterEnum.Ikat,
-    BagsFilterEnum.Jaquard
+    BagsFilterEnum.Jaquard,
+    BagsFilterEnum.LuisaAmatori
   ];
 
   changeCurrentFilterSelection(filterSelected: BagsFilterEnum): void {
@@ -39,17 +40,16 @@ export class HomepageComponent implements OnInit {
         return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.Jaquard)
       case BagsFilterEnum.Ikat:
         return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.Ikat)
+      case BagsFilterEnum.LuisaAmatori:
+        return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.LuisaAmatori)
       default:
         return []
     }
   }
 
-  constructor(public dataservice: DataManager, private router: Router) {
-  }
+  constructor(public dataservice: DataManager, private router: Router) { }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() { }
 
   onContactButtonClick(productName: string): void {
     window.location.href = `mailto:${`fluffybag.italy@gmail.com?subject=Prodotto: ${productName}`}`;

@@ -7,7 +7,7 @@
   <div class="flex justify-between flex-wrap pb-8">
     <div *ngFor="let data of getLuisaAmatoriCapsue()" class=" w-1/3 lg:w-full py-8 cursor-pointer text-center">
       <div (click)="onProductTapped(data.pathName)" class="hover:opacity-75">
-        <img src={{data.imageName}} class="object-contain h-64 w-64 margin-zero-auto pb-4" alt={{data.imageAlt}} />
+        <img src={{data.imageName}} class="object-contain h-72 w-72 margin-zero-auto pb-4" alt={{data.imageAlt}} />
 
         <p class="font-semibold text-xl pb-4">
           {{data.productName}}
@@ -36,8 +36,9 @@
     <div *ngFor="let data of bagsFilter">
       <button 
       class="bg-transparent hover:bg-greenFluffyBag text-greenFluffyBag font-semibold hover:text-white py-2 px-4 border border-greenFluffyBag hover:border-transparent rounded"
-      (click)="changeCurrentFilterSelection(data)">
-        <h1 class="works_filter_text" [ngClass]="{works_filter_text_selected: currentSelectedFilter == data}">
+      (click)="changeCurrentFilterSelection(data)"
+      [ngClass]="{bags_filter_text_selected: currentSelectedFilter == data}">
+        <h1 class="works_filter_text">
           {{data}}
         </h1>
       </button>
@@ -47,7 +48,7 @@
   <div class="flex justify-between flex-wrap pt-8">
     <div *ngFor="let data of getCurrentArray()" class=" w-1/3 lg:w-full py-8 cursor-pointer text-center">
       <div (click)="onProductTapped(data.pathName)" class="hover:opacity-75">
-        <img src={{data.imageName}} class="object-contain h-64 w-64 margin-zero-auto pb-4" alt={{data.imageAlt}} />
+        <img src={{data.imageName}} class="object-contain h-72 w-72 margin-zero-auto pb-4" alt={{data.imageAlt}} />
 
         <p class="font-semibold text-xl pb-4">
           {{data.productName}}
