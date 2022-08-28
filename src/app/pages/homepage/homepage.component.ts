@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataManager, ProductDetail } from 'src/app/DataManager/DataManager';
 import 'tw-elements';
-import { FluffyBagDetailId } from 'src/app/DataManager/DataManager';
 import { BagsFilterEnum } from 'src/app/DataManager/DataManager'
 
 @Component({
@@ -19,7 +18,8 @@ export class HomepageComponent implements OnInit {
     BagsFilterEnum.Foulard,
     BagsFilterEnum.Ikat,
     BagsFilterEnum.Jaquard,
-    BagsFilterEnum.LuisaAmatori
+    // BagsFilterEnum.LuisaAmatori,
+    BagsFilterEnum.Mini
   ];
 
   changeCurrentFilterSelection(filterSelected: BagsFilterEnum): void {
@@ -40,8 +40,10 @@ export class HomepageComponent implements OnInit {
         return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.Jaquard)
       case BagsFilterEnum.Ikat:
         return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.Ikat)
-      case BagsFilterEnum.LuisaAmatori:
-        return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.LuisaAmatori)
+      // case BagsFilterEnum.LuisaAmatori:
+        // return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.LuisaAmatori)
+      case BagsFilterEnum.Mini:
+        return this.dataservice.productStructure.filter(bags => bags.type === BagsFilterEnum.Mini)
       default:
         return []
     }
@@ -55,7 +57,7 @@ export class HomepageComponent implements OnInit {
     window.location.href = `mailto:${`fluffybag.italy@gmail.com?subject=Prodotto: ${productName}`}`;
   }
 
-  onProductTapped(productName: string): void {
-    this.router.navigate(['/dettagli', productName]);
+  onProductTapped(pathName: string): void {
+    this.router.navigate(['/dettagli', pathName]);
   }
 }

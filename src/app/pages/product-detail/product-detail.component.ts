@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataManager, ProductDetail } from 'src/app/DataManager/DataManager';
 import { ActivatedRoute } from '@angular/router';
-import { FluffyBagDetailId } from 'src/app/DataManager/DataManager';
 
 @Component({
   selector: 'app-product-detail',
@@ -23,7 +22,7 @@ export class ProductDetailComponent implements OnInit {
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    const fluffyBagId: FluffyBagDetailId = this._Activatedroute.snapshot.paramMap.get("id") as FluffyBagDetailId;
-    this.fluffyBag = this.dataservice.productStructure.filter( bag => bag.pathName === fluffyBagId)[0]
+    const fluffyBagId: string = this._Activatedroute.snapshot.paramMap.get("id") as string;
+    this.fluffyBag = this.dataservice.productStructure.filter(bag => bag.pathName === fluffyBagId)[0]
   }
 }
