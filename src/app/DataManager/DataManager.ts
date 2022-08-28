@@ -552,8 +552,110 @@ export class DataManager {
             './assets/homepage/fluffy-bag-40/fluffy-bag-40-due.png',
             './assets/homepage/fluffy-bag-40/fluffy-bag-40-tre.png',
           ],
-          descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con fiori e foglie dai toni pastelli. il pannello posteriore è in nylon impalpabile light pink',
-          descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+            descrizioneSinistra: 'BORSA SHOPPER IMBOTTITA Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato. raffigurante una fantasia con fiori e foglie dai toni pastelli. il pannello posteriore è in nylon impalpabile light pink',
+            descrizioneDestra: 'La borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. All’interno un automatico ricoperto con il raso e cucito a mano come chiusura. Prodotto Artigianale Tessuto e confezione Made in Italy.',
+        },
+        {
+            pathName: 'fluffyBagQuarantacinque',
+            id: 45,
+            imageName: './assets/homepage/fluffy-bag-45/fluffy-bag-45-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 45 MOD Adriana',
+            isSoldOut: false,
+            type: BagsFilterEnum.Foulard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-45/fluffy-bag-45-due.png',
+            ],
+            descrizioneSinistra: '',
+            descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagQuarantanove',
+            id: 49,
+            imageName: './assets/homepage/fluffy-bag-49/fluffy-bag-49-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 49 MOD Idalia',
+            isSoldOut: false,
+            type: BagsFilterEnum.Foulard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-49/fluffy-bag-49-due.png',
+            ],
+            descrizioneSinistra: '',
+            descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagCinquanta',
+            id: 50,
+            imageName: './assets/homepage/fluffy-bag-50/fluffy-bag-50-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 50 MOD Angelina',
+            isSoldOut: false,
+            type: BagsFilterEnum.Foulard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-50/fluffy-bag-50-due.png',
+            './assets/homepage/fluffy-bag-50/fluffy-bag-50-tre.png',
+            ],
+            descrizioneSinistra: '',
+            descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagCinquantuno',
+            id: 51,
+            imageName: './assets/homepage/fluffy-bag-51/fluffy-bag-51-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 51 MOD Eloise',
+            isSoldOut: false,
+            type: BagsFilterEnum.Foulard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-51/fluffy-bag-51-due.png',
+            ],
+            descrizioneSinistra: '',
+            descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagCinquantadue',
+            id: 52,
+            imageName: './assets/homepage/fluffy-bag-52/fluffy-bag-52-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 52 MOD Elizabeth',
+            isSoldOut: false,
+            type: BagsFilterEnum.Foulard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-52/fluffy-bag-52-due.png',
+            './assets/homepage/fluffy-bag-52/fluffy-bag-52-tre.png',
+            ],
+            descrizioneSinistra: '',
+            descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagCinquantaTre',
+            id: 53,
+            imageName: './assets/homepage/fluffy-bag-53/fluffy-bag-53-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 53 MOD Daila',
+            isSoldOut: false,
+            type: BagsFilterEnum.Foulard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-53/fluffy-bag-53-due.png',
+            './assets/homepage/fluffy-bag-53/fluffy-bag-53-tre.png',
+            ],
+            descrizioneSinistra: '',
+            descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagCinquantaQuattro',
+            id: 54,
+            imageName: './assets/homepage/fluffy-bag-54/fluffy-bag-54-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 54 MOD Margherita',
+            isSoldOut: false,
+            type: BagsFilterEnum.Foulard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-54/fluffy-bag-54-due.png',
+            './assets/homepage/fluffy-bag-54/fluffy-bag-54-tre.png',
+            ],
+            descrizioneSinistra: '',
+            descrizioneDestra: ''
         },
         {
             pathName: 'fluffyBagCinquantacinque',
