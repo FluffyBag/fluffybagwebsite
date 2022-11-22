@@ -753,21 +753,6 @@ export class DataManager {
           descrizioneDestra: 'Altezza cm 20 ,larghezza cm 24. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è multicolore e riprende le tonalità del tessuto fantasia. Manici imbottiti H.12 cm Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy'
         },
         {
-            pathName: 'fluffyBagSettantotto',
-            id: 78,
-            imageName: './assets/homepage/fluffy-bag-78/fluffy-bag-78-uno.png',
-            imageAlt: '',
-            productName: 'Fluffy Bag 78 Kurty Jaquard',
-            isSoldOut: false,
-            type: BagsFilterEnum.Jaquard,
-            moreImages: [
-            './assets/homepage/fluffy-bag-78/fluffy-bag-78-due.png',
-            './assets/homepage/fluffy-bag-78/fluffy-bag-78-tre.png',
-          ],
-          descrizioneSinistra: '',
-          descrizioneDestra: ''
-        },
-        {
             pathName: 'fluffyBagSettantaquattro',
             id: 74,
             imageName: './assets/homepage/fluffy-bag-74/fluffy-bag-74-uno.png',
@@ -778,8 +763,8 @@ export class DataManager {
             moreImages: [
             './assets/homepage/fluffy-bag-74/fluffy-bag-74-due.png',
           ],
-          descrizioneSinistra: '',
-          descrizioneDestra: ''
+          descrizioneSinistra: 'Altezza cm 20, larghezza cm 25 Pannello frontale in jacquard con una fantasia di righe, mentre il pannello posteriore è in taffetas satinato benige chiaro.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.13 cm Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.'
         },
         {
             pathName: 'fluffyBagSettantacinque',
@@ -792,8 +777,8 @@ export class DataManager {
             moreImages: [
             './assets/homepage/fluffy-bag-75/fluffy-bag-75-due.png',
           ],
-          descrizioneSinistra: '',
-          descrizioneDestra: ''
+          descrizioneSinistra: 'Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato raffigurante DEI rombi allungati, mentre il pannello posteriore è in nylon nero trapuntato aspina pesce.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung.cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.'
         },
         {
             pathName: 'fluffyBagSettantasei',
@@ -806,8 +791,8 @@ export class DataManager {
             moreImages: [
             './assets/homepage/fluffy-bag-76/fluffy-bag-76-due.png',
           ],
-          descrizioneSinistra: '',
-          descrizioneDestra: ''
+          descrizioneSinistra: 'Altezza cm 20, larghezza cm 25 Pannello frontale in jacquard bi-color, mentre il pannello posteriore è in taffetas satinato viola.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.13 cm Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.'
         },
         {
             pathName: 'fluffyBagSettantasette',
@@ -820,8 +805,23 @@ export class DataManager {
             moreImages: [
             './assets/homepage/fluffy-bag-77/fluffy-bag-77-due.png',
           ],
-          descrizioneSinistra: '',
-          descrizioneDestra: ''
+          descrizioneSinistra: 'Altezza cm 20, larghezza cm 25 Pannello frontale in jacquard bi-color, mentre il pannello posteriore è in velluto nero di cotone.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.13 cm Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.'
+        },
+        {
+            pathName: 'fluffyBagSettantotto',
+            id: 78,
+            imageName: './assets/homepage/fluffy-bag-78/fluffy-bag-78-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 78 Kurty Jaquard',
+            isSoldOut: false,
+            type: BagsFilterEnum.Jaquard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-78/fluffy-bag-78-due.png',
+            './assets/homepage/fluffy-bag-78/fluffy-bag-78-tre.png',
+          ],
+          descrizioneSinistra: 'Altezza cm 40 ,larghezza cm 32. Pannello frontale in jacquard goffrato raffigurante DEI rombi allungati, mentre il pannello posteriore è in taffetas satinato viola.',
+          descrizioneDestra: 'Tutta la borsa è interamente imbottita con morbida ovatta. Manici imbottiti H.12 cm Tracolla imbottita lung. cm 55. Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy Tessuto Made in Italy.'
         },
     ]
 }
