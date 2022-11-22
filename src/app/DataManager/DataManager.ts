@@ -752,5 +752,76 @@ export class DataManager {
           descrizioneSinistra: 'mini bag imbottita realizzata in  tessuto ikat di seta -cotone  con motivo geometrico piazzato sul davanti .Il dietro e i manici sono in taffetas color rubino . Tessuto è made in Italy',
           descrizioneDestra: 'Altezza cm 20 ,larghezza cm 24. La borsa è interamente imbottita con morbida ovatta. Il fiocco in velluto è multicolore e riprende le tonalità del tessuto fantasia. Manici imbottiti H.12 cm Foderata con tessuto a contrasto. Bottone automatico metallico interno cucito a mano come chiusura. Made in Italy'
         },
+        {
+            pathName: 'fluffyBagSettantotto',
+            id: 78,
+            imageName: './assets/homepage/fluffy-bag-78/fluffy-bag-78-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 78 Kurty Jaquard',
+            isSoldOut: false,
+            type: BagsFilterEnum.Jaquard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-78/fluffy-bag-78-due.png',
+            './assets/homepage/fluffy-bag-78/fluffy-bag-78-tre.png',
+          ],
+          descrizioneSinistra: '',
+          descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagSettantaquattro',
+            id: 74,
+            imageName: './assets/homepage/fluffy-bag-74/fluffy-bag-74-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 74 Mini mod Odile',
+            isSoldOut: false,
+            type: BagsFilterEnum.Mini,
+            moreImages: [
+            './assets/homepage/fluffy-bag-74/fluffy-bag-74-due.png',
+          ],
+          descrizioneSinistra: '',
+          descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagSettantacinque',
+            id: 75,
+            imageName: './assets/homepage/fluffy-bag-75/fluffy-bag-75-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 75 mod Raissa',
+            isSoldOut: false,
+            type: BagsFilterEnum.Jaquard,
+            moreImages: [
+            './assets/homepage/fluffy-bag-75/fluffy-bag-75-due.png',
+          ],
+          descrizioneSinistra: '',
+          descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagSettantasei',
+            id: 76,
+            imageName: './assets/homepage/fluffy-bag-76/fluffy-bag-76-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 76 Mini Tessbi Color',
+            isSoldOut: false,
+            type: BagsFilterEnum.Mini,
+            moreImages: [
+            './assets/homepage/fluffy-bag-76/fluffy-bag-76-due.png',
+          ],
+          descrizioneSinistra: '',
+          descrizioneDestra: ''
+        },
+        {
+            pathName: 'fluffyBagSettantasette',
+            id: 77,
+            imageName: './assets/homepage/fluffy-bag-77/fluffy-bag-77-uno.png',
+            imageAlt: '',
+            productName: 'Fluffy Bag 77 Mini Peggy Silky Ikat',
+            isSoldOut: false,
+            type: BagsFilterEnum.Mini,
+            moreImages: [
+            './assets/homepage/fluffy-bag-77/fluffy-bag-77-due.png',
+          ],
+          descrizioneSinistra: '',
+          descrizioneDestra: ''
+        },
     ]
 }
