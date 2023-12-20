@@ -1,17 +1,22 @@
-<div class="flex w-3/4 margin-zero-auto justify-between py-12 lg:py-4 border-b border-gray-100 flex-wrap items-center">
+<header class="flex w-3/4 lg:w-11/12 m-auto justify-between py-12 lg:py-4 border-b border-gray-100 flex-wrap items-center">
+    <!-- Contact Us Button -->
     <button (click)="onContactButtonClick()" class="lg:order-1 lg:pt-8">
         <p class="font-semibold text-2xl">
             Contattaci
         </p>
     </button>
 
-    <a [routerLink]="['/']">
-        <img src="assets/logo_fluffybag.png" alt="" class="h-16 lg:w-full lg:order-0"/>
+    <!-- Logo with Navigation Link -->
+    <a [routerLink]="['/']" class="logo-link lg:order-0">
+        <img src="assets/logo_fluffybag.png" alt="FluffyBag Logo" class="h-16 lg:h-auto lg:w-auto"/>
     </a>
 
-    <a routerLink="/chiSiamo" class="lg:order-2 lg:pt-8">
-        <p class="font-semibold text-2xl">
-            Chi siamo
-        </p>
-    </a>
-</div>
+    <!-- About Us Link -->
+    <nav class="lg:order-2 lg:pt-8">
+        <a [routerLink]="['/chiSiamo']" class="about-link">
+            <p class="font-semibold text-2xl">
+                Chi siamo
+            </p>
+        </a>
+    </nav>
+</header>
