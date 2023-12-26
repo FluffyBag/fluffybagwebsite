@@ -14,9 +14,12 @@
             <p class="w-3/4 margin-zero-auto font-normal leading-loose py-4">
                 {{fluffyBag.descrizioneSinistra}}
             </p>
-            <button (click)="onContactButtonClick(fluffyBag.nome)" class="w-3/4 bg-transparent hover:greenFluffyBag text-greenFluffyBag font-semibold hover:text-white py-2 px-4 border border-greenFluffyBag hover:border-transparent rounded">
+              
+            <button (click)="onContactButtonClick(fluffyBag.productName)"
+                class="w-10/12 bg-transparent hover:bg-greenFluffyBag text-greenFluffyBag font-semibold hover:text-white py-2 px-4 border border-greenFluffyBag hover:border-transparent rounded">
                 Contattaci per la {{fluffyBag.productName}}
             </button>
+
         </div>
     </div>
  

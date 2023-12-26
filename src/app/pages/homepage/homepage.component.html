@@ -1,42 +1,38 @@
-<div>
+<div class="object-contain w-full">
+  <img src="./assets/homepage_image.png" alt="Homepage Banner" />
 
-  <img src="./assets/homepage_image.png" class="object-contain w-full" alt="" />
-
-  <div class="w-11/12 margin-zero-auto">
-    <h1 class="text-4xl py-8 text-greenFluffyBag lg:text-xl"> Scopri tutte le creazioni </h1>
+  <div class="w-11/12 mx-auto">
+    <h1 class="text-4xl py-8 text-greenFluffyBag lg:text-xl">Scopri tutte le creazioni</h1>
 
     <div class="flex flex-wrap justify-between gap-y-2">
-      <div *ngFor="let data of bagsFilter">
+      <!-- Use ngFor for dynamically generating filter buttons -->
+      <div *ngFor="let filter of bagsFilter">
         <button 
-        class="bg-transparent hover:bg-greenFluffyBag text-greenFluffyBag font-semibold hover:text-white py-2 px-16 lg:px-8 border border-greenFluffyBag hover:border-transparent rounded"
-        (click)="changeCurrentFilterSelection(data)"
-        [ngClass]="{bags_filter_text_selected: currentSelectedFilter == data}">
-          <h1 class="works_filter_text">
-            {{data}}
-          </h1>
+          class="bg-transparent hover:bg-greenFluffyBag text-greenFluffyBag font-semibold hover:text-white py-2 px-16 lg:px-8 border border-greenFluffyBag hover:border-transparent rounded"
+          (click)="changeCurrentFilterSelection(filter)"
+          [ngClass]="{'bags_filter_text_selected': currentSelectedFilter == filter}">
+            {{filter}}
         </button>
       </div>
     </div>
   
     <div class="flex justify-between flex-wrap pt-4">
-      <div *ngFor="let data of getCurrentArray()" class=" w-1/3 lg:w-full py-8 cursor-pointer text-center">
-        <div (click)="onProductTapped(data.pathName)" class="hover:opacity-75">
-          
-          <img src={{data.imageName}} class="rounded-lg object-contain h-96 lg:h-80 margin-zero-auto pb-4" alt={{data.imageAlt}} />
-
-          <!-- <img src={{data.imageName}} class="object-contain w-64 lg:w-48 margin-zero-auto pb-4" alt={{data.imageAlt}} /> -->
-  
+      <!-- Use ngFor for dynamically generating product cards -->
+      <div *ngFor="let product of getCurrentArray()" class="w-1/3 lg:w-full py-8 lg:py-4 cursor-pointer">
+        <div (click)="onProductTapped(product.pathName)" class="hover:opacity-75">
+          <img 
+            src="{{product.imageName}}" 
+            alt="{{product.imageAlt}}" 
+            class="object-contain h-96 lg:h-80 mx-auto pb-8" 
+          />
           <div class="flex justify-center pb-4">
-            <div class="flex items-center" [ngClass]="data.isSoldOut ? 'justify-start' : 'justify-center'">
-                <p class="font-semibold text-xl" [ngClass]="data.isSoldOut ? 'mr-2' : ''">
-                    {{data.productName}}
-                </p>
-        
-                <ng-container *ngIf="data.isSoldOut">
-                    <p class="bg-greenFluffyBag rounded-lg text-white px-4">
-                        Sold out
-                    </p>
-                </ng-container>
+            <div class="flex items-center" [ngClass]="product.isSoldOut ? 'justify-start' : 'justify-center'">
+              <p class="text-xl" [ngClass]="product.isSoldOut ? 'mr-2' : ''">
+                {{product.productName}}
+              </p>
+              <p *ngIf="product.isSoldOut" class="bg-greenFluffyBag rounded-lg text-white px-4">
+                Sold out
+              </p>
             </div>
           </div>
         </div>
