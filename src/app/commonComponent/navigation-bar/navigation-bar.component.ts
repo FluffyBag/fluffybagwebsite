@@ -1,4 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -7,13 +8,14 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class NavigationBarComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private router: Router) {}
 
   ngOnInit(): void {
   }
 
   onContactButtonClick(): void {
     window.location.href = `mailto:${'fluffybag.italy@gmail.com?subject=Fluffy Bag Contattaci!'}`;
+    this.toggleMobileMenu();
   }
 
   toggleMobileMenu() {
@@ -27,4 +29,9 @@ export class NavigationBarComponent implements OnInit {
         }
     }
   }
+
+  navigateAndCloseMenu() {
+    this.router.navigateByUrl('/chiSiamo');
+    this.toggleMobileMenu();  // Assuming you have this method to toggle the mobile menu
+}
 }
