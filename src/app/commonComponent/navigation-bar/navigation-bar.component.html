@@ -1,22 +1,45 @@
-<header class="flex w-3/4 lg:w-11/12 m-auto justify-between py-12 lg:py-4 border-b border-gray-100 flex-wrap items-center">
-    <!-- Contact Us Button -->
-    <button (click)="onContactButtonClick()" class="lg:order-1 lg:pt-8">
-        <p class="font-semibold text-2xl">
-            Contattaci
-        </p>
+<header class="flex justify-center items-center w-full lg:w-11/12 mx-auto py-4 border-b border-gray-100">
+    <!-- Wrapper for Logo and Navigation Items -->
+    <div class="flex justify-between items-center w-full lg:max-w-6xl px-8">
+        <!-- Logo with Navigation Link -->
+        <a [routerLink]="['/']" class="flex-shrink-0">
+            <img src="assets/logo_fluffybag.png" alt="FluffyBag Logo" class="h-16 lg:w-auto"/>
+        </a>
+
+        <!-- Navigation Items (visible only on large screens) -->
+        <div class="lg:hidden flex justify-end items-center flex-grow">
+            <!-- Contact Us Button -->
+            <button (click)="onContactButtonClick()" class="text-xl mx-8">
+                Contattaci
+            </button>
+
+            <!-- About Us Link -->
+            <nav>
+                <a [routerLink]="['/chiSiamo']" class="text-xl mx-8">
+                    Chi siamo
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu for Mobile (visible only on small screens) -->
+    <button class="hidden lg:block px-8" (click)="toggleMobileMenu()">
+        <img src="path_to_hamburger_icon" alt="Menu"/>
     </button>
 
-    <!-- Logo with Navigation Link -->
-    <a [routerLink]="['/']" class="logo-link lg:order-0">
-        <img src="assets/logo_fluffybag.png" alt="FluffyBag Logo" class="h-16 lg:h-auto lg:w-auto"/>
-    </a>
+    <!-- Mobile Menu (hidden by default, visible only on small screens) -->
+    <div class="mobile-menu hidden fixed inset-0 bg-white z-50 flex flex-col justify-center items-center lg:hidden">
+        <!-- Close Button for Mobile Menu -->
+        <button class="absolute top-4 right-4" (click)="toggleMobileMenu()">
+            <img src="path_to_close_icon" alt="Close"/>
+        </button>
 
-    <!-- About Us Link -->
-    <nav class="lg:order-2 lg:pt-8">
-        <a [routerLink]="['/chiSiamo']" class="about-link">
-            <p class="font-semibold text-2xl">
-                Chi siamo
-            </p>
+        <!-- Mobile Navigation Items -->
+        <button (click)="onContactButtonClick()" class="text-xl mb-4">
+            Contattaci
+        </button>
+        <a [routerLink]="['/chiSiamo']" class="text-xl">
+            Chi siamo
         </a>
-    </nav>
+    </div>
 </header>
